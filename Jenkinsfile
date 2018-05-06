@@ -19,7 +19,7 @@ pipeline {
     
     stage('copy xmls') {
       steps {
-        sh ''scp -p root@$target_cluster:/tmp/Thumbnails/*.xml . ''
+        sh '''scp -p root@$target_cluster:/tmp/Thumbnails/*.xml . '''
       }
     }
     stage('check_cores') {
